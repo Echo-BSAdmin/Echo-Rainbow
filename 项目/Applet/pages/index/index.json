@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "basics": "/pages/basics/index/index",
+    "list": "/pages/list/index/index",
+    "explanation": "/pages/explanation/index/index",
+    "about": "/pages/about/index/index"
+  }
+}

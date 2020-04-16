@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+<basics wx:if="{{PageCur=='basics'}}"></basics>
+<list wx:if="{{PageCur=='list'}}"></list>
+<explanation wx:if="{{PageCur=='explanation'}}"></explanation>
+<about wx:if="{{PageCur=='about'}}"></about>
+
+<!-- footer -->
+<view class="cu-bar tabbar bg-white shadow foot">
+	<view class="action" bindtap="NavChange" data-cur="basics">
+		<view class='cuIcon-cu-image'>
+			<image src="/assets/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
+		</view>
+		<view class="{{PageCur=='basics'?'text-green':'text-gray'}}">首页</view>
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="list">
+		<view class='cuIcon-cu-image'>
+			<image src="/assets/images/tabbar/component{{PageCur=='list'?'_cur':''}}.png"></image>
+		</view>
+		<view class="{{PageCur=='component'?'text-green':'text-gray'}}">样例</view>
+	</view>
+	<view class="action text-gray add-action">
+		<button class="cu-btn cuIcon-add bg-green shadow"></button>
+		生成
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="explanation">
+		<view class='cuIcon-cu-image'>
+			<image src="/assets/images/tabbar/plugin{{PageCur=='explanation'?'_cur':''}}.png"></image>
+		</view>
+		<view class="{{PageCur=='explanation'?'text-green':'text-gray'}}">说明</view>
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="about">
+		<view class='cuIcon-cu-image'>
+			<image src="/assets/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+		</view>
+		<view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+	</view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/basics/index/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+  <view slot="backText">返回</view>
+  <view slot="content">彩虹格-低代码开发平台</view>
+</cu-custom>
